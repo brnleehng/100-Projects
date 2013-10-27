@@ -3,6 +3,8 @@ import java.math.BigInteger;
 /**
  * Finds the number of steps it takes for a number to go to 1 using the
  * Collatz sequence algorithm.
+ *
+ * @author slapvanilla
  */
 public class CollatzConjecture {
 
@@ -30,6 +32,9 @@ public class CollatzConjecture {
 
     }
 
+    /**
+     * Prints the proper usage for the program and exits.
+     */
     private static void usage() {
         System.out.print("usage: CollatzConjecture integer(>1)");
         System.exit(0);
