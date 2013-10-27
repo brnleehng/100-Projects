@@ -1,7 +1,7 @@
 import java.math.BigInteger;
 /**
  * Calculates pi and displays it up to the given integer. This number is
- * not rounded.
+ * not rounded. Not a particularly quick algorithm, either.
  *
  * @author slapvanilla
  */
@@ -12,6 +12,7 @@ public class PiToTheNth {
         if (args.length != 1 || Integer.parseInt(args[0]) < 1) usage();
 
         calcPitoNthDigits(Integer.parseInt(args[0]));
+        System.out.printf("%n");
 
     }
 
@@ -68,7 +69,7 @@ public class PiToTheNth {
      * Prints the proper usage for the program and exits.
      */
     private static void usage() {
-        System.out.print("usage: PiToTheNth integer(>0)");
+        System.out.printf("usage: PiToTheNth integer(>0)%n");
         System.exit(0);
     }
 }

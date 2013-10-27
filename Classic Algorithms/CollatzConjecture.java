@@ -28,7 +28,7 @@ public class CollatzConjecture {
         }
 
         /* Print the results */
-        System.out.printf("Steps required: %d", count);
+        System.out.printf("Steps required: %d%n", count);
 
     }
 
@@ -36,7 +36,7 @@ public class CollatzConjecture {
      * Prints the proper usage for the program and exits.
      */
     private static void usage() {
-        System.out.print("usage: CollatzConjecture integer(>1)");
+        System.out.print("usage: CollatzConjecture integer(>1)%n");
         System.exit(0);
     }
 }
